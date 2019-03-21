@@ -5,7 +5,7 @@
     <version>1.0.0</version>
     <description>A collection of useful components for the Duality game engine</description>
     <authors>Gregory Karastergios</authors>
-    <owners>gregnk</owners>
+    <owners>greg_nk</owners>
     
     <projectUrl>http://gregnk.com/projects/DualityTools.html</projectUrl>
     <license type="expression">ISC</license>
