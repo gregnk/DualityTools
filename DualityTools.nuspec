@@ -6,8 +6,10 @@
     <description>A collection of useful components for the Duality game engine</description>
     <authors>Gregory Karastergios</authors>
     <owners>greg_nk</owners>
+    <tags>Duality Plugin Tools</tags>
     
     <projectUrl>http://gregnk.com/projects/DualityTools.html</projectUrl>
+    <repository url="https://github.com/gregnk/DualityTools" />
     <license type="expression">ISC</license>
     <copyright>(C) 2019 Gregory Karastergios</copyright>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
