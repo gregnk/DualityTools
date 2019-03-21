@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Gregnk.Duality.Plugins.DualityTools</id>
+    <version>1.0.0</version>
+    <description>A collection of useful components for the Duality game engine</description>
+    <authors>Gregory Karastergios</authors>
+    <owners>gregnk</owners>
+    
+    <projectUrl>http://gregnk.com/projects/DualityTools.html</projectUrl>
+    <license type="expression">ISC</license>
+    <copyright>(C) 2019 Gregory Karastergios</copyright>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+  </metadata>
+
+  <files>
+    <file src="DualityTools\bin\Debug\Gregnk.Plugins.DualityTools.core.dll" target="lib\" />
+    <file src="DualityTools\bin\Debug\Gregnk.Plugins.DualityTools.core.pdb" target="lib\" />
+    <file src="DualityTools\bin\Debug\Gregnk.Plugins.DualityTools.core.xml" target="lib\" />
+  </files>
+</package>
