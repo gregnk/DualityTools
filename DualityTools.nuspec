@@ -11,6 +11,9 @@
     <license type="expression">ISC</license>
     <copyright>(C) 2019 Gregory Karastergios</copyright>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <dependencies>
+      <dependency id="AdamsLair.Duality" version="3.0.0" />
+    </dependencies>
   </metadata>
 
   <files>
