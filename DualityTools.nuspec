@@ -9,7 +9,7 @@
     <tags>Duality Plugin Tools</tags>
     
     <projectUrl>http://gregnk.com/projects/DualityTools.html</projectUrl>
-    <repository url="https://github.com/gregnk/DualityTools" />
+    <repository type="git" url="https://github.com/gregnk/DualityTools.git" />
     <license type="file">LICENSE.md</license>
     <copyright>(C) 2019 Gregory Karastergios</copyright>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
