@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
+    <title>DualityTools</title>
     <id>Gregnk.Duality.Plugins.DualityTools</id>
     <version>1.0.0</version>
     <description>A collection of useful components for the Duality game engine</description>
