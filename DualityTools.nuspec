@@ -4,7 +4,7 @@
     <title>DualityTools</title>
     <id>Gregnk.Duality.Plugins.DualityTools</id>
     <version>1.0.0</version>
-    <description>A collection of useful components for the Duality game engine</description>
+    <description>A collection of useful components for Duality</description>
     <authors>Gregory Karastergios</authors>
     <owners>greg_nk</owners>
     <tags>Duality Plugin Tools Animation SceneSelect CameraController</tags>
