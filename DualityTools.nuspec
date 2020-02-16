@@ -12,7 +12,7 @@
     <projectUrl>http://gregnk.com/projects/DualityTools.html</projectUrl>
     <repository type="git" url="https://github.com/gregnk/DualityTools.git" />
 	<license type="file">LICENSE.md</license>
-    <licenseUrl>https://raw.githubusercontent.com/gregnk/DualityTools/master/LICENSE.md</license>
+    <licenseUrl>https://raw.githubusercontent.com/gregnk/DualityTools/master/LICENSE.md</licenseUrl>
     <copyright>(c) 2019 Gregory Karastergios</copyright>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
 	<releaseNotes>Made a few minor bug fixes and updates</releaseNotes>
