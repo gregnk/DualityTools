@@ -8,6 +8,6 @@ A collection of useful development tools for Duality 3.
 * Animation map with controls for SpriteAnimator
 
 ## Copyright
-(C) 2019 Gregory Karastergios
+(c) 2019-2020 Gregory Karastergios
 
 This program is distributed under the ISC License. See [LICENSE.md](https://github.com/gregnk/DualityTools/blob/master/LICENSE.md) for more details.
