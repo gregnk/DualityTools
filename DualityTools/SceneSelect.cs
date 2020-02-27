@@ -24,12 +24,14 @@ using Duality.IO;
 using Duality.Input;
 using Duality.Resources;
 using Duality.Drawing;
+using Duality.Editor;
 
 namespace Gregnk.Plugins.DualityTools
 {
     /// <summary>
     /// A basic scene selector that can be used for debugging
     /// </summary>
+    [EditorHintCategory("")]
     public class SceneSelect : Component, ICmpUpdatable, ICmpRenderer
     {
         private int listAmount = 16;        

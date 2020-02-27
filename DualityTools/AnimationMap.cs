@@ -19,6 +19,7 @@ using System.Collections.Generic;
 
 using Duality;
 using Duality.Components.Renderers;
+using Duality.Editor;
 
 namespace Gregnk.Plugins.DualityTools
 {
@@ -26,6 +27,7 @@ namespace Gregnk.Plugins.DualityTools
     /// A component that can hold a list of animations at different angles and can be used to control a SpriteAnimator
     /// </summary>
     [RequiredComponent(typeof(SpriteAnimator))]
+    [EditorHintCategory("Graphics")]
     public class AnimationMap : Component, ICmpUpdatable
     {
         private float animAngle;

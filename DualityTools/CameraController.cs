@@ -18,6 +18,7 @@
 using Duality;
 using Duality.Input;
 using Duality.Components;
+using Duality.Editor;
 
 namespace Gregnk.Plugins.DualityTools
 {   
@@ -27,6 +28,7 @@ namespace Gregnk.Plugins.DualityTools
     /// Also comes with a manual controller that can be toggled on and off (see ManualCameraKeybindings for controls)
     /// </summary>
     [RequiredComponent(typeof(Camera))]
+    [EditorHintCategory("Graphics")]
     public class CameraController : Component, ICmpUpdatable
     {
         private GameObject target;
