@@ -51,58 +51,61 @@ namespace Gregnk.Plugins.DualityTools
 
         public float BoundRadius => DualityApp.WindowSize.X;
 
+        [DontSerialize] private Canvas textRenderer = new Canvas();
+
         public void Draw(IDrawDevice device)
         {
             // Only render while running
-            if (scenePaths == null) return;
-
-            Canvas textRenderer = new Canvas();
-            textRenderer.Begin(device);
-
-            // The text to be rendered
-            FormattedText outText = new FormattedText();
-
-            outText.SourceText += "/nSCENE SELECT/n";
-            outText.SourceText += "=============/n";
-
-            // Display the scenes
-            for (int count = 0; count <= ListAmount - 1; count++)
+            if (scenePaths != null && DualityApp.ExecContext != DualityApp.ExecutionContext.Editor)
             {
-                int renderIndex = count + listOffset;
+                textRenderer.Begin(device);
 
-                if (renderIndex >= scenePaths.Count)
-                    outText.SourceText += "/n";
+                // The text to be rendered
+                FormattedText outText = new FormattedText();
 
-                else
+                outText.SourceText += "/nSCENE SELECT/n";
+                outText.SourceText += "=============/n";
+
+                // Display the scenes
+                for (int count = 0; count <= ListAmount - 1; count++)
                 {
-                    // Highlight selected scene
-                    if (renderIndex == selectedSceneIndex)
-                        outText.SourceText += "/n  >";
+                    int renderIndex = count + listOffset;
+
+                    if (renderIndex >= scenePaths.Count)
+                        outText.SourceText += "/n";
+
                     else
-                        outText.SourceText += "/n   ";
+                    {
+                        // Highlight selected scene
+                        if (renderIndex == selectedSceneIndex)
+                            outText.SourceText += "/n  >";
+                        else
+                            outText.SourceText += "/n   ";
 
 
-                    outText.SourceText += scenePaths[renderIndex];
+                        outText.SourceText += scenePaths[renderIndex];
+                    }
                 }
+
+
+                outText.SourceText += "/n/n=============/n/n";
+
+                outText.SourceText += "UP//DOWN: Scroll scenes/n";
+                outText.SourceText += "ENTER:   Load/n";
+
+                // Set font
+                textRenderer.State.TextFont = Font.GenericMonospace10;
+
+                // Render text
+                textRenderer.DrawText(outText, 0, 0);
+                textRenderer.End();
             }
-
-
-            outText.SourceText += "/n/n=============/n/n";
-
-            outText.SourceText += "UP//DOWN: Scroll scenes/n";
-            outText.SourceText += "ENTER:   Load/n";
-
-            // Set font
-            textRenderer.State.TextFont = Font.GenericMonospace10;
-
-            // Render text
-            textRenderer.DrawText(outText, 0, 0);
         }
 
         public void GetCullingInfo(out CullingInfo info)
         {
-            info.Position = GameObj.Transform.Pos;
-            info.Radius = float.MaxValue;
+            info.Position = Vector3.Zero;
+            info.Radius = DualityApp.WindowSize.X;
             info.Visibility = VisibilityFlag.Group0 | VisibilityFlag.ScreenOverlay;
         }
 
