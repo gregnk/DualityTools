@@ -3,7 +3,7 @@
   <metadata>
     <title>DualityTools</title>
     <id>Gregnk.Duality.Plugins.DualityTools</id>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <description>A collection of useful components for Duality</description>
     <authors>Gregory Karastergios</authors>
     <owners>greg_nk</owners>
@@ -15,7 +15,10 @@
     <licenseUrl>https://raw.githubusercontent.com/gregnk/DualityTools/master/LICENSE.md</licenseUrl>
     <copyright>(c) 2019-2020 Gregory Karastergios</copyright>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-	<releaseNotes>Made a few minor bug fixes and updates</releaseNotes>
+	<releaseNotes>
+		* Fixed render errors in SceneSelect
+		* Added editor categories to components
+	</releaseNotes>
     <dependencies>
       <dependency id="AdamsLair.Duality" version="3.0.0" />
     </dependencies>
